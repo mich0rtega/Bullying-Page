@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Casos de Acoso Escolar</title>
+    <link rel="stylesheet" href="style_acoso.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Casos de Acoso Escolar</h1>
+    </header>
+    <main>
+        <section id="registro-caso">
+            <h2>Registrar Nuevo Caso</h2>
+            <form id="form-registro">
+                <label for="nombre-victima">Nombre de la Víctima:</label>
+                <input type="text" id="nombre-victima" required>
+
+                <label for="nombre-agresor">Nombre del Agresor:</label>
+                <input type="text" id="nombre-agresor" required>
+
+                <label for="descripcion">Descripción del Incidente:</label>
+                <textarea id="descripcion" required></textarea>
+
+                <label for="fecha">Fecha del Incidente:</label>
+                <input type="date" id="fecha" required>
+
+                <button type="submit">Registrar Caso</button>
+            </form>
+        </section>
+
+        <section id="casos-registrados">
+            <h2>Casos Registrados</h2>
+            <ul id="lista-casos"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
